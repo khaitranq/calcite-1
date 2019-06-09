@@ -27,6 +27,8 @@ services:
     command: jekyll build
     volumes:
       - .:/srv/jekyll
+    stdin_open: false
+    tty: false
   generate-javadoc:
     image: maven
     working_dir: /usr/src/calcite
